@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:background="@drawable/bg_dialog"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+
+        <EditText
+            android:id="@+id/edDescription"
+            style="@style/TextStyle.Medium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/bg_edittext"
+            android:hint="รายละเอียด"
+            android:imeOptions="actionNext"
+            android:inputType="textEmailAddress"
+            android:padding="8dp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btAdd"
+            style="@style/TextStyle.Medium"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="16dp"
+            android:background="@drawable/bg_button"
+            android:text="เพิ่ม"
+            android:textColor="#FFFFFF" />
+    </LinearLayout>
+</layout>

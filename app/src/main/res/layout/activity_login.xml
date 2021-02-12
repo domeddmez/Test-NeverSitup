@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#DADADA"
+        android:focusableInTouchMode="true">
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="32dp"
+            android:src="@drawable/ic_register" />
+
+        <TextView
+            style="@style/TextStyle.Bold.Large"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="เข้าสู่ระบบ" />
+
+        <EditText
+            android:id="@+id/edEmail"
+            style="@style/TextStyle.Medium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:background="@drawable/bg_edittext"
+            android:hint="อีเมล"
+            android:inputType="textEmailAddress"
+            android:imeOptions="actionNext"
+            android:padding="8dp" />
+
+
+        <EditText
+            android:id="@+id/edPassword"
+            style="@style/TextStyle.Medium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:background="@drawable/bg_edittext"
+            android:hint="รหัสผ่าน"
+            android:imeOptions="actionDone"
+            android:inputType="textPassword"
+            android:padding="8dp" />
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btLogin"
+            style="@style/TextStyle.Medium"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="16dp"
+            android:background="@drawable/bg_button"
+            android:text="เข้าสู่ระบบ"
+            android:textColor="#FFFFFF" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btRegister"
+            style="@style/TextStyle.Medium"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="16dp"
+            android:background="@drawable/bg_button"
+            android:text="สมัครสมาชิก"
+            android:textColor="#FFFFFF" />
+
+    </LinearLayout>
+</layout>
